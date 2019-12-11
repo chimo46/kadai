@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+    button {
+        font-size: 50px;
+    }    
+</style>
+</head>
+<body>
+    <button id="button">おみくじを引く</button>
+    <script>
+        const button = document.getElementById('button')
+        button.addEventlistener('click', () => {
+            const num = Math.random()
+            if(num < 0.5) {
+                alart('大凶')
+            }　else if(num < 0.8) {
+                alart('中吉')
+            }　else if(num <0.95) {
+                alart('大吉')
+            } else {
+                alart('吉')
+            }
+    　　
+        })
+    </script>
+</body>
+</html>
